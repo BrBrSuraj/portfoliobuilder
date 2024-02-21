@@ -19,12 +19,8 @@ const Home = () => {
               </div>
 
               <div className="text-justify flex justify-center  gap-10">
-                <p className="tracking-wider text-xl mt-5">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using Content
-                  here, content here.
+                <p className="about tracking-wider text-xl mt-5 leading-9 subpixel-antialiased font-mono">
+                <span className="text-lg font-bold text-appBackground">Supercharge</span> your professional profile with our Portfolio Builder. Create a striking portfolio in minutes, complete with a shareable link for maximum impact. Plus, effortlessly generate diverse resume formats from your existing profile data. Elevate your online presence and make a lasting impression with our intuitive and efficient Portfolio Builder. Level up your career journey from here!
                 </p>
                 <img alt="img" src={myImage} className="w-60 h-40 opacity-10 hidden lg:block"/>
               </div>
@@ -51,7 +47,7 @@ const Home = () => {
 
         {/* footer */}
         <div className="footer mt-auto w-full bg-appBackground flex flex-col justify-items-center items-center">
-          <span className="text-lg font-extrabold text-white text-bolder tracking-widest border-b-2 w-full text-center pb-2 pt-2 md:text-4xl md:border-b-0">
+          <span className="text-lg font-extrabold text-white text-bolder tracking-widest border-b-2 w-full text-center pb-2 pt-2 md:text-4xl md:border-b-0 font-mono">
             Portfolio Builder
           </span>
           <div className="mt-2 text-center pb-2">
@@ -59,7 +55,7 @@ const Home = () => {
               <li className="hover:bg-emerald-300 border-r-1 p-1 px-2 hover:shadow-lg hover:transition-all duration-800 delay-100 rounded-md">
                 <a href="#">Email</a>
               </li>
-              <li className="hover:bg-emerald-300 border-r-1 p-1 px-2 hover:shadow-lg hover:transition-all duration-800 delay-100 hover:rounded-md md:border-r-2">
+              <li className="hover:bg-emerald-300 border-r-1 p-1 px-2 hover:shadow-lg hover:transition-all duration-800 delay-100 hover:rounded-md">
                 <a href="#">Pricing</a>
               </li>
               <li className="hover:bg-emerald-300 border-r-1 p-1 px-2 hover:shadow-lg hover:transition-all duration-800 delay-100 rounded-md">
