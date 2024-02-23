@@ -1,15 +1,15 @@
-import myImage from "../assets/images/milestone.jpg";
+import { NavLink } from "react-router-dom";
+import myImage from "../../assets/images/milestone.jpg";
+import Logo from "../../components/Logo";
 const Home = () => {
   return (
     <>
       <div className="container  min-h-screen flex flex-col">
         <div className="main w-full  md:w-[70%]  m-auto">
-          <header className="flex gap-2 items-center justify-start py-5 px-7">
-            <h1 className="bg-appBackground rounded-full p-6 text-white text-3xl">PB</h1>
-            <p className="text-2xl font-extrabold tracking-widest text-appBackground">
-              Portfolio
-            </p>
+          <header className="py-5 px-7">
+          <Logo />
           </header>
+         
           <section className="content px-7 py-4">
             <div className="title">
               <div className="flex gap-2 items-center font-bold tracking-widest">
@@ -27,20 +27,19 @@ const Home = () => {
             </div>
 
             <section className="flex gap-3 text-white mt-5 mb-5">
-              <button
+              <NavLink to='/login'
                 type="button"
-                className="btn shadow-lg hover:bg-emerald-700 hover:transition-all duration-100 delay-100 bg-appBackground rounded-md px-5 py-2"
-              >
-                {" "}
-                Login{" "}
-              </button>
-              <button
+                className={()=>{
+                  return `btn shadow-lg hover:bg-emerald-700 hover:transition-all duration-100 delay-100 bg-appBackground rounded-md px-5 py-2`
+                }}
+              >Login</NavLink>
+
+              <NavLink to='/register'
                 type="button"
-                className="btn shadow-lg hover:bg-emerald-700 hover:transition-all duration-100 delay-100 bg-appBackground rounded-md px-5 py-2"
-              >
-                {" "}
-                Sign-Up{" "}
-              </button>
+                className={()=>{
+                  return `btn shadow-lg hover:bg-emerald-700 hover:transition-all duration-100 delay-100 bg-appBackground rounded-md px-5 py-2`
+                }}
+              >Sign-Up</NavLink>
             </section>
           </section>
         </div>
