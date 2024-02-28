@@ -4,7 +4,7 @@ import Login from '../pages/Login/Login.jsx'
 import Register from '../pages/Register/Register.jsx'
 import Main from "../components/Layouts/Main/Main.jsx"
 import Dashboard from "../pages/Dashboard/Dashboard.jsx"
-import Profile from "../pages/Profile/Profile.jsx"
+import Personal from "../components/Personals/Personal.jsx"
 
 
 
@@ -17,7 +17,7 @@ const AllRouter = createBrowserRouter(
 
     <Route path="/dashboard" element={<Main></Main>}>
         <Route path="" element={<Dashboard></Dashboard>}></Route>
-        <Route path="profile" element={<Profile></Profile>}></Route>
+        <Route path="personal" element={<Personal></Personal>}></Route>
     </Route>
     
     </>

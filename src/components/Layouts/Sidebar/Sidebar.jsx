@@ -4,7 +4,7 @@ import Logo from '../../Logo.jsx';
 const Sidebar = () => {
   return (
     <>
-      <div className="hidden wrapper md:flex flex-col gap-3 header w-[12rem] h-screen bg-appBackground">
+      <div className="hidden wrapper md:flex flex-col gap-3 header w-[12rem] min-h-screen flex-1 bg-appBackground">
         <div className="flex justify-center border-b-2">
           <Logo textSm="text-md" visibilityHidden="hidden"/>
         </div>
@@ -13,7 +13,7 @@ const Sidebar = () => {
           <h1 className='text-center mb-4 text-white font-bold text-lg'>Main menu</h1>
           <div className='menu-list'>
             <ul className='px-4 text-white flex flex-col gap-5'>
-              <NavLink>
+              <NavLink to="/dashboard/personal">
                 <span></span>
               <li className='border-b-2 pb-2 px-2 hover:bg-emerald-100 hover:text-black'>Personal details</li>
               </NavLink>

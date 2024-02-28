@@ -8,7 +8,7 @@ const Main = () => {
     <>
       <div className="flex min-h-screen">
         {/* Sidebar */}
-        <div className="">
+        <div className="min-h-screen">
           <Sidebar></Sidebar>
         </div>
 
@@ -20,8 +20,11 @@ const Main = () => {
           </div>
 
           {/* Content */}
-          <div className="flex-1 flex">
+          <div className="flex-1 flex w-full">
+            <div className="w-full">
             <Outlet></Outlet>
+            </div>
+           
           </div>
 
           {/* Footer */}
