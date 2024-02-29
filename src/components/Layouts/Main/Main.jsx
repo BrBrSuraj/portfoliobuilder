@@ -6,9 +6,9 @@ import { Outlet } from "react-router-dom";
 const Main = () => {
   return (
     <>
-      <div className="flex min-h-screen">
+      <div className="flex">
         {/* Sidebar */}
-        <div className="min-h-screen">
+        <div className="hidden md:block bg-appBackground">
           <Sidebar></Sidebar>
         </div>
 

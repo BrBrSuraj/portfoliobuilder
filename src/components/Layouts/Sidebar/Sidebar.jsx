@@ -4,7 +4,7 @@ import Logo from '../../Logo.jsx';
 const Sidebar = () => {
   return (
     <>
-      <div className="hidden wrapper md:flex flex-col gap-3 header w-[12rem] min-h-screen flex-1 bg-appBackground">
+      <div className="md:flex flex-col gap-3 w-[12rem]">
         <div className="flex justify-center border-b-2">
           <Logo textSm="text-md" visibilityHidden="hidden"/>
         </div>
